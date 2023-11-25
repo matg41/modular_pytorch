@@ -8,12 +8,14 @@ import torch
 
 from torchvision import transforms
 
-import data_setup, engine, model_builder, utils
+import data_setup, engine, model_builder, utils, get_data
 
+# Getting the data
+get_data()
 
 # Setup hyperparameters
 NUM_EPOCHS = 5
-BATCH_SIZE = 3
+BATCH_SIZE = 32
 HIDDEN_UNITS = 10
 LEARNING_RATE = 0.001
 
