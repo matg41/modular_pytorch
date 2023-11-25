@@ -11,7 +11,7 @@ from torchvision import transforms
 import data_setup, engine, model_builder, utils, get_data
 
 # Getting the data
-get_data()
+get_data.get_food_data()
 
 # Setup hyperparameters
 NUM_EPOCHS = 5
